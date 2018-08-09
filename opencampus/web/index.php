@@ -18,7 +18,7 @@
   <p>0から9の内の一桁の手書き数字の画像をアップロードしてください(JPEGまたはPNG)。</p>
   <?php
     if (!isset($_SESSION["imgid"])){
-      $_SESSION["imgid"] = mt_rand;
+      $_SESSION["imgid"] = mt_rand();
     }
     $msg = '<p>' + $_SESSION["imgid"] + '</p>';
     print($msg);
