@@ -20,13 +20,10 @@
     if (!isset($_SESSION["imgid"])){
       $_SESSION["imgid"] = mt_rand();
     }
-    $msg = '<p>' + $_SESSION["imgid"] + '</p>';
-    print($msg);
   ?>
-  <form enctype="multipart/form-data" action="__URL__" method="POST">
+  <form enctype="multipart/form-data" action="result.php" method="POST">
     <input type="hidden" name="MAX_FILE_SIZE" value="90000000" />
-    <!-- input 要素の name 属性の値が、$_FILES 配列のキーになります -->
-    <input name="userfile" type="file" />
+    <input name="fname" type="file" />
     <input type="submit" value="画像ファイルを送信" />
   </form>
 </body>
