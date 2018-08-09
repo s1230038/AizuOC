@@ -9,7 +9,6 @@ from keras.layers import Conv2D, MaxPooling2D
 from keras import backend as K
 from keras.models import model_from_json
 import numpy as np
-from google.colab import files
 import cv2
 import sys
 
