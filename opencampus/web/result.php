@@ -1,6 +1,6 @@
 <?php
 $tempfile = $_FILES['fname']['tmp_name'];
-$filename = './' . $_FILES['fname']['name'];
+$filename = './uploaded/' . $_FILES['fname']['name'];
 
 if (is_uploaded_file($tempfile)) {
     if ( move_uploaded_file($tempfile , $filename )) {

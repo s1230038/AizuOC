@@ -4,6 +4,7 @@ find ./ -name "*.php" | xargs -n1 php -l
 rm  -rf /var/www/html/wp-admin/oc/*
 cp -r web/* /var/www/html/wp-admin/oc
 chown -R apache:apache /var/www/html/wp-admin/oc
-chmod 644 /var/www/html/wp-admin/oc/*
-chmod 744 /var/www/html/wp-admin/oc/uploaded
+chmod 444 /var/www/html/wp-admin/oc/*
+chown www-data:www-data /var/www/html/wp-admin/oc/uploaded
+chmod 755 /var/www/html/wp-admin/oc/uploaded
 ls -l /var/www/html/wp-admin/oc 
