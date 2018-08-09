@@ -28,7 +28,7 @@ img_path = args[1]
 img = cv2.imread(img_path, cv2.IMREAD_GRAYSCALE)
 x = cv2.resize(img, dsize=(img_rows, img_cols), interpolation=cv2.INTER_AREA  ) 
 # 検証用
-cv2.imwrite("revert-"+img_path, x)
+# cv2.imwrite("revert-"+img_path, x)
 
 # グレースケースを0以上1以下に変換
 x = x.astype('float32')
