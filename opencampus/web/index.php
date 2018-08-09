@@ -20,8 +20,8 @@
     if (!isset($_SESSION["imgid"])){
       $_SESSION["imgid"] = mt_rand;
     }
-    msg = '<p>' + $_SESSION["imgid"] + '</p>';
-    print(msg);
+    $msg = '<p>' + $_SESSION["imgid"] + '</p>';
+    print($msg);
   ?>
   <form enctype="multipart/form-data" action="__URL__" method="POST">
     <input type="hidden" name="MAX_FILE_SIZE" value="90000000" />
