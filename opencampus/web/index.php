@@ -15,7 +15,7 @@
 <body>
   <h1>手書き数字識別機</h1>
   <h2>会津大学 認知科学講座 オープンキャンパス2018 </h2>
-  <p>0から9の内の一桁の手書き数字の画像をアップロードしてください。</p>
+  <p>0から9の内の一桁の手書き数字の画像を送信してください。</p>
   <p>写真よりもペイントソフトで描いた数字の方が認識率が高くなります。</p>
   <?php
     if (!isset($_SESSION["imgid"])){
@@ -25,7 +25,7 @@
   <form enctype="multipart/form-data" action="result.php" method="POST">
     <input type="hidden" name="MAX_FILE_SIZE" value="90000000" />
     <input name="fname" type="file" />
-    <input type="submit" value="画像ファイルを送信" />
+    <input type="submit" value="送信" />
   </form>
 </body>
 </html>
