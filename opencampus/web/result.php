@@ -18,7 +18,6 @@ if (is_uploaded_file($tempfile)) {
     if ( move_uploaded_file($tempfile , $filename )) {
         $arg = escapeshellcmd($filename);
         $arg = escapeshellarg($arg);
-        var_dump($arg);
         exec( 'python3.6 judgeNum.py ' . $arg, $out, $ret );
         echo '<h1>あなたの描いた数字は：</h1>'; 
         echo '<h1>' . $out[0]  . '</h1>';
@@ -33,7 +32,6 @@ if (is_uploaded_file($tempfile)) {
           echo '</tr>';
         }
         echo '</table>';
-        echo 'rm -f ./uploaded/' . $_SESSION["imgid"] . '-*';
         exec( 'rm -f ./uploaded/' . $_SESSION["imgid"] . '-*');
     } else {
         echo '<h1>ファイルをアップロードできません。</h1>';
