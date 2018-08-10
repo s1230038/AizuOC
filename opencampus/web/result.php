@@ -16,7 +16,10 @@ $filename = './uploaded/' . $_SESSION["imgid"] . '-'
 
 if (is_uploaded_file($tempfile)) {
     if ( move_uploaded_file($tempfile , $filename )) {
-        exec( 'python3.6 judgeNum.py ' . $filename , $out, $ret );
+        $arg = escapeshellcmd($filename);
+        $arg = escapeshellarg($arg);
+        var_dump($arg);
+        exec( 'python3.6 judgeNum.py ' . $arg, $out, $ret );
         echo '<h1>あなたの描いた数字は：</h1>'; 
         echo '<h1>' . $out[0]  . '</h1>';
         echo '<h2>確率： ' . $out[1]  . '</h2>';
