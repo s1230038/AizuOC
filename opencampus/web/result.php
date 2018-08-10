@@ -19,7 +19,7 @@ if (is_uploaded_file($tempfile)) {
         exec( 'python3.6 judgeNum.py ' . $filename , $out, $ret );
         echo '<h1>あなたの描いた数字は：</h1>'; 
         echo '<h1>' . $out[0]  . '</h1>';
-        echo '<h2>確率： ' . round($out[1] ,2)  . '</h2>';
+        echo '<h2>確率： ' . $out[1]  . '</h2>';
         echo '<table border="1">';
         echo '<tr>';
         echo '<th>数字：確率</th>';
