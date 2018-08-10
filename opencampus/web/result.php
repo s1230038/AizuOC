@@ -6,8 +6,9 @@ $filename = './uploaded/' . $_SESSION["imgid"] . '-'
 
 if (is_uploaded_file($tempfile)) {
     if ( move_uploaded_file($tempfile , $filename )) {
-        echo $filename . "をアップロードしました。";
-        echo $_SESSION["imgid"];
+        exec( 'python3.6 judgeNum.py ' . $filename , $out, $ret );
+        print_r( $out );
+        var_dump( $ret );
     } else {
         echo "ファイルをアップロードできません。";
     }
