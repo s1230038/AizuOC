@@ -33,7 +33,8 @@ if (is_uploaded_file($tempfile)) {
           echo '</tr>';
         }
         echo '</table>';
-        exec( 'rm -f ' . $filename );
+        echo 'rm -f ./uploaded/' . $_SESSION["imgid"] . '-*';
+        exec( 'rm -f ./uploaded/' . $_SESSION["imgid"] . '-*');
     } else {
         echo '<h1>ファイルをアップロードできません。</h1>';
     }
