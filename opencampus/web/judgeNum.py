@@ -42,9 +42,8 @@ x = np.expand_dims(x, axis=3)
 features = model.predict(x)
 
 #予測結果
-message = "Your writing number is: " + str(np.argmax(features))
+message = str(np.argmax(features))
 print(message)
-print("probability: " + str(np.max(features)*100) + " %")
-print("Number : Probability")
+print( str(np.max(features)*100) + " %")
 for num, prob in enumerate(features[0]):
   print(str(num) + " : " + str(prob*100) + " %" )
