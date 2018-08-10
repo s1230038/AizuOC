@@ -38,7 +38,6 @@ if (is_uploaded_file($tempfile)) {
     echo '<h1>ファイルが選択されていません。</h1>';
 } 
 ?>
-
+  <a href="index.php">戻る</a>
 </body>
-
 </html>
