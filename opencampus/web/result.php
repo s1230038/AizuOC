@@ -30,13 +30,15 @@ if (is_uploaded_file($tempfile)) {
           echo '</tr>';
         }
         echo '</table>';
+        exec( 'rm -f ' . $filename );
     } else {
-        echo 'ファイルをアップロードできません。';
+        echo '<h1>ファイルをアップロードできません。</h1>';
     }
 } else {
-    echo 'ファイルが選択されていません。';
+    echo '<h1>ファイルが選択されていません。</h1>';
 } 
 ?>
+
 </body>
 
 </html>
