@@ -1,7 +1,7 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <title>手書き数字識別結果</title>
+  <title>識別結果</title>
   <meta name="description" content="The contents of the open campus in the Univ. of Aizu">
   <meta name="author" content="An Aizu Student">
   <link rel="stylesheet" href="css/styles.css?v=1.0">
