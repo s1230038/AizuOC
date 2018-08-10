@@ -20,6 +20,7 @@
     if (!isset($_SESSION["imgid"])){
       $_SESSION["imgid"] = mt_rand();
     }
+    echo "Image ID: " . $_SESSION["imgid"];
   ?>
   <form enctype="multipart/form-data" action="result.php" method="POST">
     <input type="hidden" name="MAX_FILE_SIZE" value="90000000" />
