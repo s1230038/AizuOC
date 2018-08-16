@@ -15,7 +15,12 @@ $filename = './uploaded/' . $_SESSION["imgid"] . '-' ;
 
 if (is_uploaded_file($tempfile)) {
     if ( move_uploaded_file($tempfile , $filename )) {
-        var_dump($filename);
+        $fsize = filesize($filename); // byte
+        var_dump($fsize);
+        if( $fsize > 10485760 ) { // 10MB
+          echo '<h1>アップロードできるファイルは10MBです。</h1>';
+          exit();
+        }
         exec( 'python3.6 judgeNum.py ' . $filename, $out, $ret );
         echo '<h1>あなたの描いた数字は：</h1>'; 
         echo '<h1>' . $out[0]  . '</h1>';
