@@ -23,7 +23,7 @@
     }
   ?>
   <form enctype="multipart/form-data" action="result.php" method="POST">
-    <input type="hidden" name="MAX_FILE_SIZE" value="90000000" />
+    <input type="hidden" name="MAX_FILE_SIZE" value="8388608" />
     <input name="fname" type="file" />
     <input type="submit" value="送信" />
   </form>
