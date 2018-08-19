@@ -10,5 +10,5 @@ The 2018 open campus website in the university of Aizu
 * python3.6をインストールする
 * PIP3.6をインストールする
 * 次のコマンドを実行する $ pip3.6 install -r requirements.txt
-* SELinuxをコンテキストを適切に設定する。または、Permissive に設定する。
+* SELinuxのコンテキストを適切に設定する。その方法が分からない場合は、Permissive に設定する
 * deploy.sh　のDIR変数に、Webサイトを公開したいディレクトリを設定する
