@@ -4,11 +4,14 @@ The 2018 open campus website in the university of Aizu
 
 なお、MNISTの訓練データを学習に使いました。
 
-# How to install and deploy
+# How to install
 * GitHubからソースコードをクローンする
 * PHPをインストールする（PHP 7.1.13 で動作確認）
 * python3.6をインストールする
 * PIP3.6をインストールする
 * 次のコマンドを実行する $ pip3.6 install -r requirements.txt
 * SELinuxのコンテキストを適切に設定する。その方法が分からない場合は、Permissive に設定する
+
+# How to deploy
 * deploy.sh　のDIR変数に、Webサイトを公開したいディレクトリを設定する
+* 次のコマンドを実行してファイルを配備(deploy)する $ ./deploy.sh
