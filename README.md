@@ -4,8 +4,6 @@ The 2018 open campus website in the university of Aizu
 
 同様のデモサイトを製作したい方の参考に資すれば幸いです。
 
-なお、MNISTの訓練データを学習に使いました。
-
 # How to install
 * GitHubからソースコードをクローンする
 * PHPをインストールする（PHP 7.1.13 で動作確認）
@@ -17,3 +15,6 @@ The 2018 open campus website in the university of Aizu
 # How to deploy
 * deploy.sh　のDIR変数に、Webサイトを公開したいディレクトリを設定する
 * 次のコマンドを実行してファイルを配備(deploy)する $ ./deploy.sh
+
+# About DL training
+Deep Learning の訓練データとしてMNISTを、ニューラルネットワークとしてkerasのサンプルコードを使用しました。詳しくは MNIST_forOpenCampus.ipynb をダウンロードし Google Colaboratory で実行してご確認ください。
