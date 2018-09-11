@@ -1,6 +1,6 @@
 #!/bin/sh
-# DIR=/var/www/html/oc_vmieojvioerjvoier123/
-DIR=/var/www/html/wp-admin/oc/
+DIR=/var/www/html/oc_vmieojvioerjvoier123/
+# DIR=/var/www/html/wp-admin/oc/
 find ./ -name "*.php" | xargs -n1 php -l
 # tail /var/log/php_errors.log
 rm  -rf $DIR
