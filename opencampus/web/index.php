@@ -34,6 +34,6 @@
   <li>ペイントソフトで描いた数字も送信可</li>
   <li>MS-Paintの場合は、28x28のキャンバス上で、ブラシを選択し線の幅を２番目にすると精度が良い。</li>
   </ul>
-  <a href="howToUse.pdf">詳しい説明(PDF)</a><br>
+  <a href="howToUse.pdf" target="_blank">詳しい説明(PDF)</a><br>
 </body>
 </html>
